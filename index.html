@@ -23,12 +23,12 @@
 		<a class="brand">
 		<img class="logo" src="sthiti.png" ></a>
 		
-			<a class="link" href="#home">home</a>
-			<a class="link" href="#about">about us</a>
-			<a class="link" href="#services">services</a>
-			<a class="link" href="#destinations">destinations</a>
-			<a class="link" href="#contact">gallery</a>
-			<a class="link" href="#contact">contact us</a>
+			<a class="link" href="#">home</a>
+			<a class="link" href="#abt">about us</a>
+			<a class="link" href="#services.html">services</a>
+			<a class="link" href="#destinations.html">destinations</a>
+			<a class="link" href="#gallery.html">gallery</a>
+			<a class="link" href="#contact.html">contact us</a>
 			
  
 		
@@ -78,8 +78,8 @@
 
 </div>
 
-<div class="about">	
-<iframe float="left" width="550" height="320" src="https://www.youtube.com/embed/03BS63VQWvg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="about" id="abt">	
+<iframe float="left" width="650" height="320" src="https://www.youtube.com/embed/03BS63VQWvg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="about-text">
 <h2>about us.</h2><p>Sthiti’s mission is to guide you in nourishing your mind and your body through natural methods. Natural hygiene promotes the idea of healthy eating, adequate exercise and rest leading to self-healing of the body.Sthiti’s mission is to guide you in nourishing your mind and your body through natural methods. Natural hygiene promotes the idea of healthy eating, adequate exercise and rest leading to self-healing of the body. </p></div>
 </div>
@@ -87,9 +87,19 @@
  <!-- Site footer -->
     <footer class="site-footer">
       <div class="row">
-  <div class="column"><img src="whitelogo.png" height="85px" padding-left="400px"></div>
-  <div class="column">contact us.<br>fdgjkdsjdglksngkls<br>fhdkbfjkhf</div>
-  <div class="column">Quick Links</div>
+  <div class="column"><img src="whitelogo.png" height="155px" id="whitelogo"></div>
+  <div class="column"><b id="contactus">Contact Us</b><br><br>Shyjith C<br>Mob: +91-949521375<br>Sthiti, Yoga Center<br>Kollikadavu PO,Koovakkunnu<br>Kannur 671314, Kerala,India</div>
+  <div class="column">Quick Links
+   <ul class="footer-links">
+        <li><a href="#abt">About Us</a></li>
+          
+              <li><a href="services.html">Services</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+        </div>
 </div>
          
         
@@ -103,17 +113,8 @@
 
 
 <script type="text/javascript">
-	 function initMap() {
-        var sthithi = {lat:13.483916 , lng: 76.204566};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: sthithi
-        });
-        var marker = new google.maps.Marker({
-          position: sthithi,
-          map: map
-        });
-      }
+
+	
 	
 var timeOnSlide = 3, 		
    

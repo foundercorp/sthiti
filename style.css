@@ -5,7 +5,7 @@ body{
 }
 .navigation-bar{
 background-color: white;
-box-shadow: 0 2px 2px -2px rgba(0,0,0,.7);
+box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);
 }
 nav img {
   height: 50px;
@@ -15,7 +15,7 @@ nav .brand {
   flex: 1;
   align-self: flex-start;
   height: 50px;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 nav .link {
@@ -238,7 +238,8 @@ iframe{
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+
+   /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -255,3 +256,37 @@ iframe{
   }
 }
 
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#fff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+#whitelogo{
+    padding-left: 90px
+}
