@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+}
+
+.servicesImage {
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.servicesHeader {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family:'Roboto', sans-serif;
+  font-size: 55px;
+}
+
+.greySectionYoga {
+	background-color: #F5F5F5;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 100px;
+}
+
+.whiteSectionYoga {
+  background-color: white;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 100px;
+}
+
+.greySectionMeditation {
+	background-color: #F5F5F5;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 100px;
+}
+
+.whiteSectionMassage {
+  background-color: white;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 100px;
+}
+
+p {
+	font-family:'Roboto', sans-serif;
+	font-size:20px;
+}
+
+h2 {
+	font-family:'Roboto', sans-serif;
+	font-size:35px;
+	color: #66625f;
+}
+
+.dailyYoga {
+	float: left;
+	width: 450px;
+	height: 290px;
+	padding-right: 75px;
+	padding-top: 25px;
+}
+
+.outdoorYoga {
+	float: right;
+	width: 450px;
+	height: 290px;
+	padding-left: 75px;
+	padding-top: 45px;
+}
+
+.meditation {
+	float: left;
+	width: 450px;
+	height: 290px;
+	padding-right: 75px;
+	padding-top: 25px;
+}
+
+.massage {
+	float: right;
+	width: 450px;
+	height: 290px;
+	padding-left: 75px;
+	padding-top: 25px;
+}
