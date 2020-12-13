@@ -1,0 +1,257 @@
+body{
+    margin:0px;
+    font-family:"Roboto";
+    background-color: #F5F5F5;
+}
+.navigation-bar{
+background-color: white;
+box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);
+}
+nav img {
+  height: 50px;
+}
+
+nav .brand {
+  flex: 1;
+  align-self: flex-start;
+  height: 50px;
+  margin-left: 10px;
+}
+
+nav .link {
+    font-weight:bold; 
+
+  flex: 1;
+  max-width: max-content;
+  margin-left: 80px;
+}
+.logo {
+  
+    vertical-align: top;
+    width: 130px;
+    height: 85px;
+  
+    margin-right: 30px;
+
+    margin-top: -5px; 
+    margin-bottom: 10px;   
+}
+
+.content { max-width:800px;text-align:left; margin:auto; }
+
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 80px;      
+    line-height: 80px; 
+    text-decoration: none;
+    color:#A9A9A9;
+   
+}
+nav .link:hover {
+  background-color: #DCDCDC;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*slides*/
+#slidy-container { 
+    padding-top: 5px;
+  width: 100%; overflow: hidden; margin: 0 auto;
+}
+/*motto*/
+#motto{
+    padding-top: 15px;
+    font-family: 'Roboto';
+    text-align:"center";
+    padding-left: 450px;
+    font-size: 35px;
+    color: #A9A9A9;
+
+}
+/*cards*/
+.cards-list {
+  z-index: 0;
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgba(255,255,255, 0.9);
+  margin: 20px auto;
+  width: 410px;
+  height: 310px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.1), 1px 1px 1px 1px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.4s;
+
+}
+
+
+
+.card .card_title {
+  text-align: left;
+  border-radius: 0px 0px 40px 40px;
+  font-family: 'Roboto';
+  font-weight: thin;
+  font-size: 30px;
+  margin-top: 10px;
+  padding-left: 40px;
+
+ 
+}
+.card .card-desc {
+  text-align: left;
+  border-radius: 0px 0px 40px 40px;
+  font-family: 'Roboto';
+  font-weight: thin;
+  font-size: 21px;
+  margin-top: 10px;
+  margin-right: 30px;
+  
+    color:#A9A9A9 }
+
+
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1), 
+    1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+
+
+
+}
+@media only screen and (max-width: 700px) {
+  .about-vid,
+  .about-desc{
+    width:100%;
+    height:200px;
+   }
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+#map{
+  width:25%;
+  height:250px;
+  
+}
+
+iframe{
+    padding-top: 40px;
+    padding-left: 80px;
+    float: left;
+    padding-right: 120px;
+}
+
+.about-text{
+    padding-top: 100px;
+    text-align: center;
+    margin-right: 50px;
+  
+    padding-bottom: 120px;
+}
+.about-text h3{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about-text p{
+    font-size: 20px;
+}
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+

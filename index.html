@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>STHITI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+	
+	<nav class="navigation-bar" >
+		<a class="brand">
+		<img class="logo" src="sthiti.png" ></a>
+		
+			<a class="link" href="#home">home</a>
+			<a class="link" href="#about">about us</a>
+			<a class="link" href="#services">services</a>
+			<a class="link" href="#destinations">destinations</a>
+			<a class="link" href="#contact">gallery</a>
+			<a class="link" href="#contact">contact us</a>
+			
+ 
+		
+	</nav>
+	<div id="slidy-container">
+  <figure id="slidy">
+    <img src="white.jpeg" alt="eyes" >
+    <img src="green.jpeg" alt="lou" >
+    <img src="blue.jpeg" alt="lucie-2" >
+  </figure>
+</div>
+
+<div id = "motto"><i>"living by nature,yoga and wellbeing"</i></div>
+
+
+<section id="cards">
+
+<div class="cards-list">
+  
+<div class="card">
+  <div class="card_title ">
+    <p>services.</p>
+    <div class="card-desc">
+    <p>With a mission to self-heal with nature, Sthiti offers yoga classes guided by experienced and passionate instructors who are committed to helping you strengthen your mind and body. </p></div>
+  </div>
+</div>
+
+  <div class="card">
+ 
+  <div class="card_title ">
+    <p>natural hygiene.</p>
+    <div class="card-desc">
+    <p>Sthiti’s mission is to guide you in nourishing your mind and your body through natural methods. Natural hygiene promotes the idea of healthy eating, adequate exercise and rest leading to self-healing of the body. </p></div>
+  </div>
+</div>
+
+<div class="card">
+  
+  <div class="card_title">
+    <p>destinations.</p>
+    <div class="card-desc">
+    <p>Sthiti’s mission is to guide you in nourishing your mind and your body through natural methods. Natural hygiene promotes the idea of healthy eating, adequate exercise and rest leading to self-healing of the body. </p></div>
+  </div>
+</div>
+ </section> 
+  
+
+</div>
+
+<div class="about">	
+<iframe float="left" width="550" height="320" src="https://www.youtube.com/embed/03BS63VQWvg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="about-text">
+<h2>about us.</h2><p>Sthiti’s mission is to guide you in nourishing your mind and your body through natural methods. Natural hygiene promotes the idea of healthy eating, adequate exercise and rest leading to self-healing of the body.Sthiti’s mission is to guide you in nourishing your mind and your body through natural methods. Natural hygiene promotes the idea of healthy eating, adequate exercise and rest leading to self-healing of the body. </p></div>
+</div>
+ 
+ <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="row">
+  <div class="column"><img src="whitelogo.png" height="85px" padding-left="400px"></div>
+  <div class="column">contact us.<br>fdgjkdsjdglksngkls<br>fhdkbfjkhf</div>
+  <div class="column">Quick Links</div>
+</div>
+         
+        
+   
+</footer>
+   
+
+
+
+</body>
+
+
+<script type="text/javascript">
+	 function initMap() {
+        var sthithi = {lat:13.483916 , lng: 76.204566};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: sthithi
+        });
+        var marker = new google.maps.Marker({
+          position: sthithi,
+          map: map
+        });
+      }
+	
+var timeOnSlide = 3, 		
+   
+timeBetweenSlides = 1, 	
+  
+    animationstring = 'animation',
+    animation = false,
+    keyframeprefix = '',
+    domPrefixes = 'Webkit Moz O Khtml'.split(' '), 
+
+    pfx  = '',
+    slidy = document.getElementById("slidy"); 
+if (slidy.style.animationName !== undefined) { animation = true; } 
+
+
+if( animation === false ) {
+  for( var i = 0; i < domPrefixes.length; i++ ) {
+    if( slidy.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
+      pfx = domPrefixes[ i ];
+      animationstring = pfx + 'Animation';
+      keyframeprefix = '-' + pfx.toLowerCase() + '-';
+      animation = true;
+      break;
+    }
+  }
+}
+
+if( animation === false ) {
+  // animate in JavaScript fallback
+} else {
+  var images = slidy.getElementsByTagName("img"),
+      firstImg = images[0], 
+      // get the first image inside the "slidy" element.
+      imgWrap = firstImg.cloneNode(false);  // copy it.
+  slidy.appendChild(imgWrap); // add the clone to the end of the images
+  var imgCount = images.length, // count the number of images in the slide, including the new cloned element
+      totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount - 1), // calculate the total length of the animation by multiplying the number of _actual_ images by the amount of time for both static display of each image and motion between them
+      slideRatio = (timeOnSlide / totalTime)*100, // determine the percentage of time an induvidual image is held static during the animation
+      moveRatio = (timeBetweenSlides / totalTime)*100, // determine the percentage of time for an individual movement
+      basePercentage = 100/imgCount, 
+      position = 0, 
+      css = document.createElement("style"); 
+  css.type = "text/css";
+  css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n"; // set the width for the slidy container
+  css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }\n";
+  css.innerHTML += "@"+keyframeprefix+"keyframes slidy {\n"; 
+  for (i=0;i<(imgCount-1); i++) { // 
+    position+= slideRatio; // make the keyframe the position of the image
+    css.innerHTML += position+"% { left: -"+(i * 100)+"%; }\n";
+    position += moveRatio; // make the postion for the _next_ slide
+    css.innerHTML += position+"% { left: -"+((i+1) * 100)+"%; }\n";
+}
+  css.innerHTML += "}\n";
+  css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n"; // call on the completed keyframe animation sequence
+document.body.appendChild(css); // add the new stylesheet to the end of the document
+}
+
+</script>
+
+</html>
