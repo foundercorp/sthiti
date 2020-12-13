@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+}
+
+.servicesImage {
+	width: 100%;
+	padding-top: 20px;
+
+}
+
+.servicesHeader {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family:'Roboto', sans-serif;
+  font-size: 55px;
+}
+
+.whiteSpace{
+	width: 100%;
+	height: 20px;
+	background-color: white;
+}
+
+.greySectionAralam {
+	background-color: #F5F5F5;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 100px;
+}
+
+.whiteSectionPazhassi {
+  background-color: white;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 100px;
+}
+
+.greySectionKanjirakolli {
+	background-color: #F5F5F5;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 100px;
+}
+
+p {
+	font-family:'Roboto', sans-serif;
+	font-size:20px;
+}
+
+h2 {
+	font-family:'Roboto', sans-serif;
+	font-size:35px;
+	color: #66625f;
+}
+
+.aralam {
+	float: left;
+	width: 450px;
+	height: 280px;
+	padding-right: 75px;
+	padding-top: 15px;
+}
+
+.pazhassi {
+	float: right;
+	width: 450px;
+	height: 280px;
+	padding-left: 75px;
+	padding-bottom: 30px;
+	
+}
+
+.kanjirakolli {
+	float: left;
+	width: 450px;
+	height: 280px;
+	padding-right: 75px;
+	padding-bottom: 30px;
+}
