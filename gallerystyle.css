@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.galleryImage {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.galleryHeader {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family:'Roboto', sans-serif;
+  font-size: 55px;
+}
+
+.aws_image {
+	width: 500px;
+	height: 300px;
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.sthiti_image {
+	width: 600px;
+	height: 275px;
+	padding-bottom: 30px;
+	padding-right: 30px;
+	float: left;
+}
+
+.mountain_image {
+	width: 350px;
+	height: 200px;
+	float: left;
+}
+
+
+.waterview_image {
+	width: 600px;
+	height: 275px;
+	float: left;
+	padding-right: 30px;
+}
