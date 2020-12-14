@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
 </head>
 <body>
    <nav class="navigation-bar" >
@@ -30,14 +31,17 @@
         <img src="gallery-header.jpg" class="galleryImage" alt="services header">
         <div class="centered">gallery.</div>
     </div>
-<div class="images">
-    <img src="aws_gallery.jpg" class="aws_image" alt="services header"> 
+<div id="images" class="pure-g">
+    <img src="aws_gallery.jpg" class="pure-u-1-3" id="aws_image" alt="services header"> 
 
-    <img src="logo_front.png" class="sthiti_image" alt="services header">
+    <img src="logo_front.png" class="pure-u-2-3" id="sthiti_image" alt="services header">
 
-    <img src="mountain.png" class="mountain_image" alt="services header">
+    <img src="mountain.png" class="pure-u-1-5" id="mountain_image" alt="services header">
 
-    <img src="water_view.png" class="waterview_image" alt="services header"></div>
+    <img src="water_view.png"  class="pure-u-1-5" id="waterview_image" alt="services header">
+
+</div>
+<div class=""></div>
    <!--  <div class="pics">
         <div class="pure-u-1-3"><img src="aws_gallery.jpg" class="aws_image" alt="services header"> </div>
     </div> -->
